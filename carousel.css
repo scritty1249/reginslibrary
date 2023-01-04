@@ -94,22 +94,22 @@ body {
 
 /* Imported styling from Reign's original website */
 
-@font-face {
-  font-family: "Playfair Display";
-  src: url("./assets/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@800;900&display=swap'); 
 
 body {
   font-family: var("Playfair Display", "PT Sans", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif) !important;
+}
+
+.playfair {
+  font-family: "Playfair Display";
+  font-weight: 900;
 }
 
 /* Copy-pasting in styles, this is NOT supposed to be a full redesign */
 
 .headtext-1 {
   color: rgb(48, 48, 48);
-  font-family: "Playfair Display";
   font-size: 34.9802px;
-  font-weight: 700;
   line-height: 34.9802px;
   outline-color: rgb(48, 48, 48);
   text-emphasis-color: rgb(48, 48, 48);
@@ -117,3 +117,24 @@ body {
   -webkit-text-stroke-color: rgb(48, 48, 48);
 }
 
+.about-button {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+}
+
+.about-button:hover {
+  border-color: lightblue;
+  color: lightblue;
+}
+
+.jumbotron {
+  color: black;
+  height: 480px;
+  background-color: rgb(70, 70, 70);
+  background-image: url("./assets/splash.jpg");
+  background-position-y: -65px;
+  background-size: 1480px;
+  background-repeat: no-repeat;
+  background-blend-mode: overlay;
+}
